@@ -1,3 +1,17 @@
+html, body { height: 100%; }
+
+.parent {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child {
+  width: 80%;
+  height: 25%;
+}
+
 body { 
     background: url(../images/carbonHome.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -18,32 +32,34 @@ body {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
 } 
 
-h1 {
+h1, h2, h3, h4 {
     text-transform: uppercase;
+    font-weight: bold;
+    
     
 }
 
-.text-bg {
-    padding: 1rem 0;
-    width: 20rem;
+.button {
+    padding: 5px 5px;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     text-decoration: none;
-    color: #fff;
-    background-color: black;
+    background-image: url(/assets/images/carbonHomepage.jpg);
+    color: white;
+    border: black solid 3px;
 }
 
-.menu {
-    text-align: center;
-}
+
 
 
 footer {
     bottom: 0;
-    margin: 1rem;
+    margin-bottom: 5px;
     position: absolute;
     height: fit-content;
     width: 100%;
+    text-align: center;
 }
