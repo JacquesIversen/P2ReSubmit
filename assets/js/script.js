@@ -1,45 +1,53 @@
-const question = document.getElementsByClassName("question")
-const choice = document.getElementById("choice")
-
-let answers = []
-let questions = [
-  {
-    question: "In what team did lewis hamilton optain his first F1 World championship?",
-    choice1: "Mclaren",
-    choice2: "Mercedes AMG",
-    choice3: "Ferrari",
-    choice4: "Force India",
-    answer: 1
-  },
-  {
-    question:
-      "sebastian vettel is a beloved character, but when did he win his first f1 race?",
-    choice1: "Italian GP 2008",
-    choice2: "Abu Dhabi GP 2011",
-    choice3: "Canada GP 2009",
-    choice4: "US GP 2009",
-    answer: 1
-  },
-  {
-    question: "nico rosberg is known for being the only racedriver to ever beat lewis hamilton in equal machinery, but who replaced him?",
-    choice1: "Robert Kubica",
-    choice2: "Kevin Magnussen",
-    choice3: "Valtteri Bottas",
-    choice4: "George Russell",
-    answer: 3
-  }];
-
-function showQuestions(questions) { //Generates questions.
-    var output = [];
-    var answers;
-
-    for(var i = 0; i < questions.length; i++) {
-
-    }
+const questions = [
+    { id: 0, q: "Why does bird fly?",
+        answer: [
+            {option: "They have no legs", isCorrect: false},
+            {option: "Because the Earth is flat", isCorrect: false},
+            {option: "Because they bloody can!", isCorrect: true},
+        ]},
+    { id: 1, q: "What can one catch, that isn't thrown?",
+        answer: [
+            {option: "A child with bad behavior", isCorrect: false},
+            {option: "A cold", isCorrect: true},
+            {option: "Feelings", isCorrect: false},
+        ]},
+        { id: 2, q: "Some months have 31 days some 30, but how many have 28?",
+        answer: [
+            {option: "Merry Christmas", isCorrect: false},
+            {option: "All of them", isCorrect: true},
+            {option: "February", isCorrect: false},
+        ]},
+        { id: 3, q: "Who is bigger, Mr. Bigger, Mrs. Bigger, or their baby?",
+        answer: [
+            {option: "Mr. Bigger", isCorrect: false},
+            {option: "Mrs. Bigger", isCorrect: false},
+            {option: "Baby Bigger", isCorrect: true},
+        ]}
+];
 
 
+
+
+
+       // Getting the question
+    const question = document.getElementById("question");
+
+    console.log("dav")
+    // Setting the question text
+    question.innerText = questions[id].q;
+    const option1 = document.getElementById('option1');
+    const option2 = document.getElementById('option2');
+    const option3 = document.getElementById('option3');
+    option1.innerText = questions[id].answer[0].text;
+    option2.innerText = questions[id].answer[1].text;
+    option3.innerText = questions[id].answer[2].text;
+    option1.value = questions[id].answer[0].isCorrect;
+    option2.value = questions[id].answer[1].isCorrect;
+    option3.value = questions[id].answer[2].isCorrect;
+    console.log("dav igen")
 }
+startGame = () => {
+    question();
+  };
 
-  
-
-console.log("Java er en lille so")
+  startGame();
