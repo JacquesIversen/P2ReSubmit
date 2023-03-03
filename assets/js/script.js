@@ -32,13 +32,13 @@ const questions = [
        // Getting the question
     
     const question = questions[0]//document.getElementById("question");
-    var id = 0 //Math.floor(Math.random() * questions.length);
+    var questionId = 0 //Math.floor(Math.random() * questions.length);
     console.log("dav")
     // Setting the question text
-    const questionText = questions[id].q;
+    const questionText = questions[questionId].q;
     const questionTextDiv = document.getElementById("questionText");
     questionTextDiv.innerText = questionText;
-    const questionsAnswers = questions[id].answer
+    const questionsAnswers = questions[questionId].answer
     console.log(questionsAnswers)
 
     for (let i=0; i<questionsAnswers.length; i++) {
@@ -61,17 +61,27 @@ const questions = [
     //option2.value = questions[id].answer[1].isCorrect;
     //option3.value = questions[id].answer[2].isCorrect;
     console.log("dav igen")
-
+/*
 startGame = () => {
     question();
   };
-
-onclickAnswer = (id) => {
-    console.log(id)
+*/
+onclickAnswer = (value) => {
+    console.log(value)
+    alert("Your Answer was " + value)
+    for (let i=0; i<questionsAnswers.length; i++) {
+        const option = document.getElementById('option'+i);
+        console.log(option.value)
+        if(option.value === true) {
+            option.style.background = "green"
+        }
+    }
 }
 
 submitButton.onclick = function(){
     showResults(questions, quizContainer, resultsContainer);
 }
 
-  startGame();
+// Next page loading via button. has answered true. 
+// conditional rendering.
+// 
