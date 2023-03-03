@@ -10,12 +10,12 @@
 </head>
 <body>
     <div class="parent">
-        <h2 class="question" id="question">Question</h2>
+        <h2 class="question" id="questionText">Question</h2>
         <div>
             <div>
-                <div class="q-button" id="option1"></div>
-                <div class="q-button" id="option2"></div>
-                <div class="q-button" id="option3"></div>
+                <div class="q-button"  onclick="onclickAnswer(this.value)" id="option0"></div>
+                <div class="q-button" onclick="onclickAnswer(this.value)" id="option1"></div>
+                <div class="q-button" onclick="onclickAnswer(this.value)" id="option2"></div>
             </div>
             <a class="button" id="game-highscore" href="highscores.html">Quit & Check the highscores</a>
         </div>
