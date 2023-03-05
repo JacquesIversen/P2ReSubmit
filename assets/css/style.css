@@ -105,4 +105,9 @@ footer {
     padding: 15px;
 }
 
-.q-button:hover
+#next-button {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
