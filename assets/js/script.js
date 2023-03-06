@@ -2,6 +2,8 @@ const choices = Array.from(document.getElementsByClassName("q-button"));
 let nextButton;
 let questionsAnswers;
 let questionCounter;
+let qAnsweredText;
+let correctAnswers = 0
 
 const questions = [
     { id: 0, q: "Why does bird fly?",
@@ -21,7 +23,9 @@ const questions = [
             {option: "Merry Christmas", isCorrect: false},
             {option: "All of them", isCorrect: true},
             {option: "February", isCorrect: false},
-        ]},
+        ],
+        explainer: "All months have 28."
+    },
         { id: 3, q: "Who is bigger, Mr. Bigger, Mrs. Bigger, or their baby?",
         answer: [
             {option: "Mr. Bigger", isCorrect: false},
@@ -34,6 +38,7 @@ startGame = () => {
     questionCounter = 0;
     //availableQuestions = [...questions];
     nextQuestion();
+    console.log("storre")
   };
 
 
@@ -43,6 +48,7 @@ startGame = () => {
     nextButton = document.getElementById("next-button")
     nextButton.disabled = true
     nextButton.style.background = "grey"
+    console.log(nextButton)
     var questionId = questionCounter-1
     // Setting the question text
     const questionText = questions[questionId].q;
@@ -74,13 +80,22 @@ startGame = () => {
 
 
 onclickAnswer = (value) => {
-    console.log(value)
-    alert("Your Answer was " + value)
+    if(value === true) { 
+        document.getElementById("q-answered-text").innerHTML = "Correct!"
+        correctAnswers++
+        } else {
+            if(questions[questionCounter-1].explainer) {
+                document.getElementById("q-answered-text").innerHTML = questions[questionCounter-1].explainer
+            } else {
+            document.getElementById("q-answered-text").innerHTML = "Your answer was incorrect"
+        }}
     for (let i=0; i<questionsAnswers.length; i++) {
         const option = document.getElementById('option'+i);
         console.log(option.value)
         if(option.value === true) {
             option.style.background = "green"
+        } else {
+            option.style.background = "red"
         }
     }
     nextButton.disabled = false
@@ -91,13 +106,15 @@ onclickNext = () => {
     for (let i=0; i<questionsAnswers.length; i++) {
         const option = document.getElementById('option'+i);
         console.log(option.value)
-            option.style.background = "red"
+            option.style.background = "white"
 }
-
+document.getElementById("q-answered-text").innerHTML = "Click on your answer"
 if (questionCounter === questions.length) {
-    console.log("should go to end")
+    //document.getElementById("final-score").innerHTML = `Your scored ${correctAnswers} of ${questions.length}`
+    localStorage.setItem("score", correctAnswers)
     return window.location.assign("/end.html");
 } else {
+    console.log("xxxxx")
     nextQuestion();
 }
 }

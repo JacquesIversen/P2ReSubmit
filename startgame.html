@@ -10,7 +10,8 @@
 </head>
 <body>
     <div class="parent">
-        <h2 class="question" id="questionText">Question</h2>
+                <h2 class="question" id="questionText">Question</h2>
+                <h4 class="q-answered-text" id="q-answered-text">Click on your answer.</h4>
         <div>
             <div>
                 <div class="q-button"  onclick="onclickAnswer(this.value)" id="option0"></div>
@@ -18,7 +19,7 @@
                 <div class="q-button" onclick="onclickAnswer(this.value)" id="option2"></div>
             </div>
             <a class="button" id="game-highscore" href="end.html">Quit & Check the highscores</a>
-            <div class="parent"><a class="button" id="next-button" onclick="onclickNext()">Next bitch</a></div>
+            <div class="parent"><input type="button" class="button" id="next-button" onclick="onclickNext()" value="next"/></div>
         </div>
     </div>
 
