@@ -58,7 +58,6 @@ startGame = () => {
     console.log(questionsAnswers)
 
     for (let i=0; i<questionsAnswers.length; i++) {
-        // const answerOption = questions[i].answer
         console.log(questionsAnswers[i])
         const option = document.getElementById('option'+i);
         option.innerText = questionsAnswers[i].option
@@ -74,7 +73,6 @@ startGame = () => {
     //option1.value = questions[id].answer[0].isCorrect;
     //option2.value = questions[id].answer[1].isCorrect;
     //option3.value = questions[id].answer[2].isCorrect;
-    console.log("dav igen")
 
   }
 
@@ -110,19 +108,12 @@ onclickNext = () => {
 }
 document.getElementById("q-answered-text").innerHTML = "Click on your answer"
 if (questionCounter === questions.length) {
-    //document.getElementById("final-score").innerHTML = `Your scored ${correctAnswers} of ${questions.length}`
     localStorage.setItem("score", correctAnswers)
     localStorage.setItem("totalQuestions", questions.length)
     return window.location.assign("/end.html");
 } else {
-    console.log("xxxxx")
     nextQuestion();
-}
-}
+}}
 
-
-// Next page loading via button. has answered true. 
-// conditional rendering.
-// 
 
 startGame();
