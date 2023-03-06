@@ -112,6 +112,7 @@ document.getElementById("q-answered-text").innerHTML = "Click on your answer"
 if (questionCounter === questions.length) {
     //document.getElementById("final-score").innerHTML = `Your scored ${correctAnswers} of ${questions.length}`
     localStorage.setItem("score", correctAnswers)
+    localStorage.setItem("totalQuestions", questions.length)
     return window.location.assign("/end.html");
 } else {
     console.log("xxxxx")
