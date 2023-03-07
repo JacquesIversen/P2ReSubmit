@@ -72,7 +72,19 @@ Responsive was corrected, when tested on smaller iphone devices, design was faul
 
 ### JS tested in Esprima and Jshint. 
 - No errors in Esprima, in neither js files.
+
 <a href="https://ibb.co/dkhM3PW"><img src="https://i.ibb.co/WBT5dkx/Screen-Shot-2023-03-07-at-7-07-44-PM.png" alt="Screen-Shot-2023-03-07-at-7-07-44-PM" border="0"></a>
+
 - No errors in Jshint in neither js files.
 Calling undefined variables in 3 variables, all which is used on key. 
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/w7WjSbv/Screen-Shot-2023-03-07-at-7-16-15-PM.png" alt="Screen-Shot-2023-03-07-at-7-16-15-PM" border="0"></a>
+
+### Lighthouse report
+Heading elements are not in a sequentially-descending order, Pulling accessibility down. 
+No Meta was done, hence why the SEO is considered so low. 
+
+<a href="https://ibb.co/tPKRkV9"><img src="https://i.ibb.co/n8mpZxF/Screen-Shot-2023-03-07-at-7-21-38-PM.png" alt="Screen-Shot-2023-03-07-at-7-21-38-PM" border="0"></a>
+
+## Deployment
+---
