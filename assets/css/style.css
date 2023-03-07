@@ -108,6 +108,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 15px;
+    text-transform: uppercase;
 }
 
 #next-button {
@@ -151,6 +152,7 @@ footer {
 
 footer a {
   text-decoration: underline;
+  display: grid;
 }
 
 
@@ -161,9 +163,10 @@ footer a {
     font-weight: bolder;
   }
 
-  .question, .text-field-home, .q-answered-text{
+  .question, .text-field-home, .q-answered-text, .q-button{
     width: 80%;
   }
+
 
   #end-button {
     bottom: 80px;
