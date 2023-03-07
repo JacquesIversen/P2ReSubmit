@@ -15,23 +15,23 @@ const questions = [
     { id: 1, q: "What can one catch, that isn't thrown?",
         answer: [
             {option: "A child with bad behavior", isCorrect: false},
-            {option: "A cold", isCorrect: true},
-            {option: "Feelings", isCorrect: false},
+            {option: "a cold", isCorrect: true},
+            {option: "A computer from a frustrated programmer", isCorrect: false},
         ]},
-        { id: 2, q: "Some months have 31 days some 30, but how many have 28?",
+        { id: 2, q: "Which month has 28 days?",
         answer: [
             {option: "Merry Christmas", isCorrect: false},
             {option: "All of them", isCorrect: true},
             {option: "February", isCorrect: false},
         ],
-        explainer: "All months have 28."
+        explainer: "Duuuh.... All months have 28."
     },
         { id: 3, q: "Who is bigger, Mr. Bigger, Mrs. Bigger, or their baby?",
         answer: [
             {option: "Mr. Bigger", isCorrect: false},
             {option: "Mrs. Bigger", isCorrect: false},
             {option: "Baby Bigger", isCorrect: true},
-        ]}
+        ], explainer: "Baby Bigger is a little Bigger"}
 ];
 
 startGame = () => {
