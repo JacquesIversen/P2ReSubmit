@@ -169,7 +169,18 @@ footer a {
 
 
   #end-button {
-    bottom: 80px;
-    left:-25px;
+    bottom: 0;
+  }
+
+  .question {
+    top: 10%;
+  }
+
+  #q-answered-text {
+    bottom: 15%;
+  }
+
+  * {
+    box-sizing: content-box;
   }
 }
