@@ -93,7 +93,7 @@ document.getElementById("q-answered-text").innerHTML = "Click on your answer";
 if (questionCounter === questions.length) {
     localStorage.setItem("score", correctAnswers);
     localStorage.setItem("totalQuestions", questions.length);
-    return window.location.assign("index.html");
+    return window.location.assign("end.html");
 } else {
     nextQuestion();
 }};
