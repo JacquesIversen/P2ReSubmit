@@ -1,4 +1,4 @@
-# A quiz with no purpose. 
+# A pointless Quiz. 
 
 ## Introduction
  
@@ -88,3 +88,43 @@ No Meta was done, hence why the SEO is considered so low.
 
 ## Deployment
 ---
+The steps to deploy is as follows:
+
+git add <file> - This command was used to add the file(s) to the staging area before they are committed.
+
+git commit -m “commit message” - This command was used to commit changes to the local repository queue ready for the final step.
+
+git push - This command was used to push all committed code to the remote repository on github.
+
+Deployment to Github Pages
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab
+- From the menu on left select 'Pages'
+- From the source section drop-down menu, select the Branch: main
+- Click 'Save'
+- A live link will be displayed in a green banner when published successfully.
+
+Livelink can be accessed here: https://jacquesiversen.github.io/P2ReSubmit/startgame.html
+
+
+
+
+Deployment for this turned out to be a real bitch. Pages was redeployed numerous times to try and make the pathways work. As the final give up stroke hit, somehow the changes were updated in the live preview.. Oh the fun in that. 
+
+Ex. The button would not update the url design due to a assets/images path, this was changed to ../(name)
+
+link to end.html in script.js shown as /end.html and caused the system to crash. This procedure was repeated in all pathways in all files. 
+
+<a href="https://ibb.co/ChWfMjM"><img src="https://i.ibb.co/m6S3XnX/Screen-Shot-2023-03-08-at-10-52-01-AM.png" alt="Screen-Shot-2023-03-08-at-10-52-01-AM" border="0"></a>
+
+<a href="https://ibb.co/XztT2XH"><img src="https://i.ibb.co/D7QnV4d/Screen-Shot-2023-03-08-at-11-23-46-AM.png" alt="Screen-Shot-2023-03-08-at-11-23-46-AM" border="0"></a>
+
+Livelink can be accessed here: https://jacquesiversen.github.io/P2ReSubmit/startgame.html
+
+
+## Credits
+---
+- My Tutor Oscar for making me understand the syntax and rules of Javscript and Python. He made a great effort making me understand the different ways js can be written. 
+- Pexels.com for image design for both background in body and buttons. 
+- A great mishmash of 7 different quiz builds found mainly on SO. 
+
