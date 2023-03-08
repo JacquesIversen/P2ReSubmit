@@ -47,7 +47,7 @@ h1, h2, h3, h4, a {
     width: 300px;
     margin: 10px;
     text-decoration: none;
-    background-image: url(/assets/images/carbonHomepage.jpg);
+    background-image: url(assets/images/carbonHomepage.jpg);
     color: white;
     border: black solid 3px;
     border-radius: 5px;
